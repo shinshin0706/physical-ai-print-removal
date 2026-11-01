@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.DS_Store
+data/submission/*.xml
+data/submission/trajectory.json
+data/submission/protocol.json
+data/submission/vision/*.npz
+data/submission/vision/fit/
+outputs/submission/vision/test_frames/
+*.mp4

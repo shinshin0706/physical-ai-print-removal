@@ -1,0 +1,7 @@
+{
+  "source_sha256": "e6fbb4aff93c06148e03fbd6723bfc07928a54335d4a85ab1dcd8b53c8a4d2ab",
+  "split": "pair index divisible by5 held out; no source frame crosses split",
+  "train_patches": 605,
+  "validation_patches": 145,
+  "seed": 35701
+}

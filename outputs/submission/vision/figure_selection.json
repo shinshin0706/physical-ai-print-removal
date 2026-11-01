@@ -1,0 +1,17 @@
+[
+  {
+    "id": 321,
+    "group": "tiny_fragments",
+    "rule": "first baseline miss corrected"
+  },
+  {
+    "id": 81,
+    "group": "bed_similar",
+    "rule": "first remaining miss or first positive"
+  },
+  {
+    "id": 243,
+    "group": "unseen_hues",
+    "rule": "first remaining miss or first positive"
+  }
+]

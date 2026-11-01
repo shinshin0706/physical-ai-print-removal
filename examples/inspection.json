@@ -1,0 +1,56 @@
+{
+  "K": [
+    [
+      906.7879334817693,
+      0.0,
+      640.0
+    ],
+    [
+      0.0,
+      906.7879334817693,
+      360.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "distortion": [
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "rows": [
+    {
+      "file": "raw_0000.png",
+      "id": 0,
+      "valid": true,
+      "foreground_pixels": 37,
+      "clear": true
+    },
+    {
+      "file": "raw_0321.png",
+      "id": 321,
+      "valid": true,
+      "foreground_pixels": 106,
+      "clear": false
+    },
+    {
+      "file": "raw_0081.png",
+      "id": 81,
+      "valid": true,
+      "foreground_pixels": 31,
+      "clear": true
+    },
+    {
+      "file": "raw_0243.png",
+      "id": 243,
+      "valid": true,
+      "foreground_pixels": 33,
+      "clear": true
+    }
+  ]
+}

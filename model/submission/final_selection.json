@@ -1,0 +1,91 @@
+{
+  "test_seed": 31701,
+  "test_count": 560,
+  "groups": [
+    "reference",
+    "bed_similar",
+    "achromatic",
+    "unseen_hues",
+    "tiny_fragments",
+    "directional_shadow",
+    "low_exposure"
+  ],
+  "scene_sha256": "9051a33cf166ea67ceb8316ad88b26b8c213ff1d1a15f4a39d99609c56ba3589",
+  "trajectory_sha256": "29dde474f9cb72445553273c22d30a29d8025c07796302c3a80ec0e78aabe25e",
+  "original_weights_sha256": "d1db9c883c303d7c3c1e53b02c4083c9f659bff1cbc43318c8f4f989a9edcaab",
+  "refined_weights_sha256": "ef5ba199ddbc75fd7240899754395473a321ad4196e4b62e9c4cf808325862b3",
+  "validation_sha256": "98522e984ff16a0c007be9b9068fa65e855e8197db7a79bfb8013f2fb9150a3d",
+  "objective": "min false_clear subject to false_block<=10% of empty; if infeasible min false_block then false_clear; tie larger threshold",
+  "threshold_candidates": [
+    1,
+    2,
+    4,
+    8,
+    12,
+    20,
+    32,
+    64,
+    128,
+    320,
+    640,
+    1280,
+    2560,
+    5120,
+    16384,
+    65536
+  ],
+  "configs": {
+    "cnn128": {
+      "minimum_pixels": 5120,
+      "validation": {
+        "count": 280,
+        "present": 140,
+        "empty": 140,
+        "false_clear": 126,
+        "false_block": 12,
+        "rejected": 10
+      },
+      "false_block_budget_met": true
+    },
+    "cnn512": {
+      "minimum_pixels": 65536,
+      "validation": {
+        "count": 280,
+        "present": 140,
+        "empty": 140,
+        "false_clear": 118,
+        "false_block": 21,
+        "rejected": 10
+      },
+      "false_block_budget_met": false
+    },
+    "rule512": {
+      "minimum_pixels": 16384,
+      "validation": {
+        "count": 280,
+        "present": 140,
+        "empty": 140,
+        "false_clear": 121,
+        "false_block": 14,
+        "rejected": 10
+      },
+      "false_block_budget_met": true
+    },
+    "refined512": {
+      "minimum_pixels": 64,
+      "validation": {
+        "count": 280,
+        "present": 140,
+        "empty": 140,
+        "false_clear": 35,
+        "false_block": 6,
+        "rejected": 10
+      },
+      "false_block_budget_met": true
+    }
+  },
+  "probability": 0.5,
+  "baseline128_minimum": 20,
+  "area_equivalent512_minimum": 320,
+  "pilot": "Unconstrained weighted objective produced an always-stop detector on validation; rejected before looking at pilot test outcomes."
+}
